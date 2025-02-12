@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# BIBLIOTECA DIGITAL
 
 `CURSO: Sistemas de Informação`
 
