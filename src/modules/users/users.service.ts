@@ -7,7 +7,9 @@ import { UpdateUserDto } from './dto/update.user.dto';
 export class UsersService {
   constructor(private readonly usersRepository: UsersRepository) {}
 
-  create(createUserDto: CreateUserDto) {
+  async create(createUserDto: CreateUserDto) {
+    const userExists = await this.usersRepository.findByEmail(createUserDto.email);
+    if (userExists) throw new Error('Email já cadastrado.');
     return this.usersRepository.create(createUserDto);
   }
 
