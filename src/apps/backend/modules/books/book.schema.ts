@@ -1,13 +1,14 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
-import { Document, ObjectId } from 'mongoose';
-import { User } from '../users/user.schema';
+import { Document, ObjectId, Types } from 'mongoose';
+import { BookCondition } from './book.condition.enum';
 
 export type BookDocument = Book & Document;
 
 @Schema({ timestamps: true })
 export class Book {
-  _id: ObjectId;
+  @Prop({type: Types.ObjectId, auto: true })
+  id: ObjectId;
 
   @Prop({ required: true })
   @IsNotEmpty()
@@ -32,13 +33,17 @@ export class Book {
   @IsNumber()
   publishYear: number;
 
-  genre: string;
+  @Prop({ required: true, enum: BookCondition })
+  condition: BookCondition;
 
-  @Prop({ required: true })
-  ownerId: ObjectId;
-  owner?: User;
+  @Prop({ type: { type: Types.ObjectId, ref: 'Owner', required: true } })
+  owner?: Types.ObjectId;
 
-  createdAt: Date;
+  @Prop([{ type: Types.ObjectId, ref: 'User' }])
+  interestedUsers: Types.ObjectId[];
+
+  @Prop([{ type: Types.ObjectId, ref: 'Review' }])
+  reviews: Types.ObjectId[];
 }
 
 export const BookSchema = SchemaFactory.createForClass(Book);

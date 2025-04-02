@@ -4,12 +4,13 @@ import { MongooseModule } from '@nestjs/mongoose';
 import databaseConfig from './config/database.config';
 import { UsersModule } from './modules/users/users.module';
 import { BooksModule } from './modules/books/books.module';
+import { ReviewsModule } from './modules/reviews/review.module';
+import { BookshelfItemModule } from './modules/bookshelf/bookshelf.module';
 
 @Module({
   imports: [
-    UsersModule,
-    BooksModule,
-    ConfigModule.forRoot({
+    MongooseModule.forRoot('mongodb://mongoadmin:secret@localhost:27017'),
+    /* ConfigModule.forRoot({
       load: [databaseConfig],
       isGlobal: true,
     }),
@@ -26,7 +27,11 @@ import { BooksModule } from './modules/books/books.module';
           password: configService.get<string>('database.password'),
         },
       }),
-    }),
+    }), */
+    UsersModule,
+    BooksModule,
+    ReviewsModule,
+    BookshelfItemModule,
   ],
 })
 export class AppModule {}
