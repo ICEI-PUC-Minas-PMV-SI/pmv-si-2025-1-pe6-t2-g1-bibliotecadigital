@@ -6,32 +6,32 @@ O projeto SAVEBOOK tem como objetivo principal criar uma comunidade online para 
 
 A API do SAVEBOOK tem como principal objetivo permitir que usuários se cadastrem, publiquem livros para doação ou troca, interajam entre si, avaliem livros e organizem suas leituras. A API será usada por clientes externos, como o frontend web em React e o aplicativo mobile em React Native. Entre os principais recursos oferecidos estão:
 
-Cadastro e login de usuários (incluindo autenticação via Google e Facebook);
+-Cadastro e login de usuários (incluindo autenticação via Google e Facebook);
 
-Registro e visualização de livros disponíveis;
+-Registro e visualização de livros disponíveis;
 
-Envio de notificações sobre interesse em livros;
+-Envio de notificações sobre interesse em livros;
 
-Avaliação e recomendação de livros;
+-Avaliação e recomendação de livros;
 
-Criação de eventos de troca e feed de interação entre leitores.
+-Criação de eventos de troca e feed de interação entre leitores.
 
 
 ## Modelagem da Aplicação
 
 A modelagem da aplicação inclui as principais entidades do sistema:
 
-Usuário: nome, e-mail, senha, foto de perfil, preferências literárias.
+-Usuário: nome, e-mail, senha, foto de perfil, preferências literárias.
 
-Livro: título, autor, edição, estado de conservação, foto, status (disponível ou não).
+-Livro: título, autor, edição, estado de conservação, foto, status (disponível ou não).
 
-Interesse: vínculo entre usuários interessados e donos de livros.
+-Interesse: vínculo entre usuários interessados e donos de livros.
 
-Avaliação: nota de 1 a 5, comentário e referência ao livro e ao usuário.
+-Avaliação: nota de 1 a 5, comentário e referência ao livro e ao usuário.
 
-Evento: data, local (presencial ou virtual), regras e participantes.
+-Evento: data, local (presencial ou virtual), regras e participantes.
 
-Notificações: geradas via Firebase Messaging.
+-Notificações: geradas via Firebase Messaging.
 
 Os dados serão armazenados em um banco MongoDB, com uso do Mongoose para modelagem dos schemas.
 
@@ -40,21 +40,21 @@ Os dados serão armazenados em um banco MongoDB, com uso do Mongoose para modela
 
 As principais tecnologias adotadas para a API são:
 
-Node.js com Express para desenvolvimento da API;
+-Node.js com Express para desenvolvimento da API;
 
-MongoDB com Mongoose para gerenciamento do banco de dados;
+-MongoDB com Mongoose para gerenciamento do banco de dados;
 
-Firebase Authentication para login e autenticação de usuários;
+-Firebase Authentication para login e autenticação de usuários;
 
-Firebase Cloud Messaging para envio de notificações;
+-Firebase Cloud Messaging para envio de notificações;
 
-Vercel para deploy do frontend;
+-Vercel para deploy do frontend;
 
-Azure para hospedagem do banco de dados;
+-Azure para hospedagem do banco de dados;
 
-Git e GitHub para versionamento;
+-Git e GitHub para versionamento;
 
-Tailwind CSS no frontend para estilização responsiva.
+-Tailwind CSS no frontend para estilização responsiva.
 
 ## API Endpoints
 
