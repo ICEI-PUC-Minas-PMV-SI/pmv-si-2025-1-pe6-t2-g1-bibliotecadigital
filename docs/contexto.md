@@ -107,12 +107,7 @@ Especificamente, os objetivos incluem:
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01|O sistema deve ser desenvolvido utilizando apenas tecnologias e ferramentas gratuitas ou open-source, priorizando frameworks amplamente suportados|
-|02|O banco de dados escolhido deve ser gratuito, escalável e capaz de suportar alta concorrência dentro dos limites de um servidor básico|
-|03|A autenticação dos usuários deve ser implementada sem depender de serviços pagos, podendo ser feita via autenticação tradicional (e-mail/senha) com criptografia adequada e permitindo integração opcional com login social (Google, Facebook etc.)|
-|04|O desenvolvimento e manutenção do sistema devem ser feitos exclusivamente pelos membros da equipe, garantindo documentação para futuras melhorias|
-|05|A infraestrutura do sistema deve ser projetada para suportar um número inicial limitado de usuários, com monitoramento de desempenho para futura escalabilidade|
-|06|O tempo de desenvolvimento não deve exceder  03 meses, garantindo entrega dentro do prazo definido|
-|07|O sistema deve estar em conformidade com a LGPD (Lei Geral de Proteção de Dados) para proteção das informações dos usuários|
+|02|O tempo de desenvolvimento não deve exceder 03 meses, garantindo entrega dentro do prazo definido|
 
 <p align="justify">As restrições definidas neste projeto são fundamentais para orientar as decisões técnicas e estratégicas da equipe, garantindo que o desenvolvimento do sistema ocorra dentro dos limites estabelecidos. A escolha por tecnologias gratuitas e open-source (Restrição 01) possibilita um desenvolvimento acessível e sustentável, evitando custos adicionais com licenciamento. Da mesma forma, a infraestrutura escalável (Restrição 05) assegura que o sistema possa crescer conforme a demanda, sem comprometer a experiência do usuário.</p>
 
@@ -181,7 +176,7 @@ _Imagem 01 - Fluxograma representando a interação do usuário com o catálogo 
 # Arquitetura da Solução
 <p align="justify"> A arquitetura da plataforma “SAVEBOOK” é baseada em uma estrutura modular de três camadas: apresentação, aplicação e dados. O frontend será desenvolvido com React e React Native, enquanto o backend utilizará Node.js com Express para gerenciar a lógica do sistema. Os dados serão armazenados em MongoDB, hospedado na Azure. Além disso, a plataforma contará com Firebase Authentication para autenticação, Firebase Cloud Messaging para notificações e será hospedada em Heroku e Vercel, garantindo escalabilidade e desempenho. O diagrama a seguir ilustra a relação entre esses componentes.</p>
 
-![Fluxograma arquittura de solução](img/IMG_02-ARQ_SOLUCAO.png)
+![Fluxograma arquittura de solução](img/IMG_02-ARQ_SOLUCAO(02).png)
 _Imagem 02 - Fluxograma representando a arquitetura de solução_
 
 ## Tecnologias Utilizadas
