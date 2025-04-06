@@ -1,31 +1,62 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
+O projeto SAVEBOOK tem como objetivo principal criar uma comunidade online para leitores, permitindo a troca e doação de livros, avaliações de obras, sugestões personalizadas e interação entre usuários. Para isso, será desenvolvida uma API RESTful que servirá de ponte entre o frontend (web/mobile) e o backend, oferecendo os serviços essenciais para o funcionamento da plataforma.
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
+A API do SAVEBOOK tem como principal objetivo permitir que usuários se cadastrem, publiquem livros para doação ou troca, interajam entre si, avaliem livros e organizem suas leituras. A API será usada por clientes externos, como o frontend web em React e o aplicativo mobile em React Native. Entre os principais recursos oferecidos estão:
 
-[Inclua os objetivos da sua api.]
+Cadastro e login de usuários (incluindo autenticação via Google e Facebook);
+
+Registro e visualização de livros disponíveis;
+
+Envio de notificações sobre interesse em livros;
+
+Avaliação e recomendação de livros;
+
+Criação de eventos de troca e feed de interação entre leitores.
 
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+A modelagem da aplicação inclui as principais entidades do sistema:
+
+Usuário: nome, e-mail, senha, foto de perfil, preferências literárias.
+
+Livro: título, autor, edição, estado de conservação, foto, status (disponível ou não).
+
+Interesse: vínculo entre usuários interessados e donos de livros.
+
+Avaliação: nota de 1 a 5, comentário e referência ao livro e ao usuário.
+
+Evento: data, local (presencial ou virtual), regras e participantes.
+
+Notificações: geradas via Firebase Messaging.
+
+Os dados serão armazenados em um banco MongoDB, com uso do Mongoose para modelagem dos schemas.
 
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
+As principais tecnologias adotadas para a API são:
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+Node.js com Express para desenvolvimento da API;
+
+MongoDB com Mongoose para gerenciamento do banco de dados;
+
+Firebase Authentication para login e autenticação de usuários;
+
+Firebase Cloud Messaging para envio de notificações;
+
+Vercel para deploy do frontend;
+
+Azure para hospedagem do banco de dados;
+
+Git e GitHub para versionamento;
+
+Tailwind CSS no frontend para estilização responsiva.
 
 ## API Endpoints
-
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 
 ### Endpoint 1
 - Método: GET
