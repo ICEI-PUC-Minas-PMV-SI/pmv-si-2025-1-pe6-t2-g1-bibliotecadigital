@@ -54,7 +54,14 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+As principais estratégias de segurança adotadas incluem:
+
+- Autenticação e Autorização: Utilização do Firebase Authentication para autenticação segura via e-mail/senha e redes sociais (Google e Facebook), com tokens de acesso gerenciados por JWT (JSON Web Token) para autorizar as requisições dos usuários.
+- Proteção de Dados Sensíveis: Senhas dos usuários são armazenadas com criptografia (utilizando hashing seguro como bcrypt), evitando exposição de credenciais mesmo em caso de vazamento de dados.
+- Validação de Requisições: Implementação de middleware para validação de entradas nos endpoints da API, prevenindo ataques como SQL Injection, NoSQL Injection e XSS.
+- Controle de Acesso: Diferenciação de permissões para usuários comuns e administradores, garantindo que apenas usuários autorizados possam executar determinadas ações, como moderação ou exclusão de conteúdo.
+- Proteção contra ataques comuns: Uso de CORS configurado para controlar domínios permitidos, limitação de requisições (rate limiting) para evitar ataques de força bruta e medidas básicas contra CSRF (Cross-Site Request Forgery), especialmente em endpoints sensíveis.
+- Backup e Recuperação: Realização de backups periódicos dos dados armazenados, garantindo a integridade das informações e permitindo a restauração em caso de falhas.
 
 ## Implantação
 
