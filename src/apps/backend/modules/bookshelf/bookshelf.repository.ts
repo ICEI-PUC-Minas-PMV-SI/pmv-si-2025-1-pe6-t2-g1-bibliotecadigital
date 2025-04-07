@@ -29,10 +29,10 @@ export class BookshelfRepository {
   }
 
   async findAll(): Promise<BookshelfItem[]> {
-    return this.bookshelfModel.find().exec();
+    return this.bookshelfModel.find().populate('userId').populate('bookId').exec();
   }
 
   async findByUserId(userId: string): Promise<BookshelfItem[]> {
-    return this.bookshelfModel.find({ userId }).exec();
+    return this.bookshelfModel.find({ userId }).populate('userId').populate('bookId').exec();
   }
 }

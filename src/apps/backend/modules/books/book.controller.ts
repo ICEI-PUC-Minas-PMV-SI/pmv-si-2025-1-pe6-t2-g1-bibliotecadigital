@@ -19,22 +19,22 @@ export class BookController {
   }
 
   @Get(':id')
-  findById(@Param('id') id: ObjectId) {
+  findById(@Param('id') id: string) {
     return this.bookService.findById(id);
   } 
 
   @Get('owner/:ownerId')
-  findByOwnerId(@Param('ownerId') ownerId: ObjectId) {
+  findByOwnerId(@Param('ownerId') ownerId: string) {
     return this.bookService.findByOwnerId(ownerId);
   }
 
   @Put(':id')
-  update(@Param('id') id: ObjectId, @Body() updateBookDto: UpdateBookDto) {
+  update(@Param('id') id: string, @Body() updateBookDto: UpdateBookDto) {
     return this.bookService.update(id, updateBookDto);
   }
 
   @Delete(':id')
-  delete(@Param('id') id: ObjectId) {
+  delete(@Param('id') id: string) {
     return this.bookService.delete(id);
   }
 }

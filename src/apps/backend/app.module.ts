@@ -6,32 +6,35 @@ import { UsersModule } from './modules/users/users.module';
 import { BooksModule } from './modules/books/books.module';
 import { ReviewsModule } from './modules/reviews/review.module';
 import { BookshelfItemModule } from './modules/bookshelf/bookshelf.module';
+import { NotificationModule } from './modules/notifications/notification.module';
+import { ExchangeRequestModule } from './modules/exchange-request/exchange.request.module';
+
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://mongoadmin:secret@localhost:27017'),
-    /* ConfigModule.forRoot({
+    ConfigModule.forRoot({
       load: [databaseConfig],
       isGlobal: true,
+      envFilePath: '.env',
     }),
 
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (configService: ConfigService) => ({
-        uri: configService.get<string>('database.uri'),
-        dbName: configService.get<string>('database.dbName'),
-        authSource: 'admin',
-        auth: {
-          username: configService.get<string>('database.user'),
-          password: configService.get<string>('database.password'),
-        },
-      }),
-    }), */
+      useFactory: (configService: ConfigService) => {
+        const uri = configService.get<string>('database.uri');
+        console.log('Mongo URI from env:', uri); // Verifique o valor aqui
+        return {
+          uri,
+        };
+      },
+    }),
     UsersModule,
     BooksModule,
     ReviewsModule,
     BookshelfItemModule,
+    NotificationModule,
+    ExchangeRequestModule,
   ],
 })
 export class AppModule {}

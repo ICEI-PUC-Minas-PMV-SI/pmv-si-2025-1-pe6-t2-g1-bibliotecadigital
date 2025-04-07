@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Patch, Delete, Body, Param } from '@nestjs/common';
+import { Controller, Get, Post, Patch, Delete, Body, Param, Put } from '@nestjs/common';
 import { ReviewsService } from './review.service';
 import { Review } from './review.schema';
 import { UpdateReviewDto } from './dto/update.review.dto';
@@ -17,7 +17,7 @@ export class ReviewsController {
     return this.reviewService.getReviewsByBookId(bookId);
   }
 
-  @Post(':id')
+  @Put(':id')
   async updateReview(@Param('id') reviewId: string, @Body() updateReviewDto: UpdateReviewDto): Promise<Review> {
     return this.reviewService.updateReview(reviewId, updateReviewDto);
   }

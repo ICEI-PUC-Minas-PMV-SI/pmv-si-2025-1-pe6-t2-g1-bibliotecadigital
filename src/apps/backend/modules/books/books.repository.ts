@@ -14,14 +14,14 @@ export class BooksRepository {
     return this.bookModel.find().exec();
   }
 
-  async findById(id: ObjectId): Promise<Book | undefined> {
+  async findById(id: string): Promise<Book | undefined> {
     const book = await this.bookModel.findById(id);
     if (!book) throw new NotFoundException('Livro não encontrado.');
     return book;
   }
 
-  findByOwnerId(ownerId: ObjectId): Promise<Book[]> {
-    return this.bookModel.find({ ownerId: ownerId }).exec();
+  findByOwnerId(ownerId: string): Promise<Book[]> {
+    return this.bookModel.find({ owner: ownerId }).exec();
   }
 
   create(createBookDto: CreateBookDto): Promise<Book> {
@@ -29,13 +29,13 @@ export class BooksRepository {
     return newBook.save();
   }
 
-  async update(id: ObjectId, updateBookDto: UpdateBookDto): Promise<Book | undefined> {
+  async update(id: string, updateBookDto: UpdateBookDto): Promise<Book | undefined> {
     const updatedBook  = await this.bookModel.findByIdAndUpdate(id, updateBookDto, { new: true }).exec();
     if (!updatedBook) throw new NotFoundException('Livro não encontrado.');
     return updatedBook;
   }
 
-  async delete(id: ObjectId): Promise<Book | undefined> {
+  async delete(id: string): Promise<Book | undefined> {
     const deletedBook = await this.bookModel.findByIdAndDelete(id).exec();
     if (!deletedBook) throw new NotFoundException('Livro não encontrado.');
     return deletedBook;

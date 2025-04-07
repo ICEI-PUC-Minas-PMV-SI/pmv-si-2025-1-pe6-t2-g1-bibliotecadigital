@@ -16,19 +16,19 @@ export class BookService {
     return this.bookRepository.findAll();
   }
 
-  findById(id: ObjectId) {
+  findById(id: string) {
     return this.bookRepository.findById(id);
   }
 
-  findByOwnerId(ownerId: ObjectId) {
+  findByOwnerId(ownerId: string) {
     return this.bookRepository.findByOwnerId(ownerId);
   }
 
-  update(id: ObjectId, updateBookDto: UpdateBookDto) {
+  update(id: string, updateBookDto: UpdateBookDto) {
     return this.bookRepository.update(id, updateBookDto);
   }
 
-  delete(id: ObjectId) {
+  delete(id: string) {
     return this.bookRepository.delete(id);
   }
 }
