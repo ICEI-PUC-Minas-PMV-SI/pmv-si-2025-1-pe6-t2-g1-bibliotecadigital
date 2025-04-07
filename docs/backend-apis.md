@@ -845,14 +845,99 @@ Etapas de implantação:
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+Realizamos testes funcionais por meio do Swagger, utilizando-o como ferramenta para enviar requisições aos endpoints da aplicação. Para cada teste, fornecemos os parâmetros necessários, validando tanto o envio quanto a resposta recebida, garantindo o correto funcionamento das funcionalidades expostas.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+### a) Users:
+
+![Teste Users](img/testes_api/User/users1.png)
+![Teste Users](img/testes_api/User/users2.png)
+![Teste Users](img/testes_api/User/users3.png)
+![Teste Users](img/testes_api/User/users4.png)
+![Teste Users](img/testes_api/User/users5.png)
+![Teste Users](img/testes_api/User/users6.png)
+![Teste Users](img/testes_api/User/users7.png)
+![Teste Users](img/testes_api/User/users8.png)
+![Teste Users](img/testes_api/User/users9.png)
+![Teste Users](img/testes_api/User/users10.png)
+![Teste Users](img/testes_api/User/users11.png)
+![Teste Users](img/testes_api/User/users12.png)
+
+### b) Livros:
+
+![Teste Book](img/testes_api/Book/book1.png)
+![Teste Book](img/testes_api/Book/book2.png)
+![Teste Book](img/testes_api/Book/book3.png)
+![Teste Book](img/testes_api/Book/book4.png)
+![Teste Book](img/testes_api/Book/book5.png)
+![Teste Book](img/testes_api/Book/book6.png)
+![Teste Book](img/testes_api/Book/book7.png)
+![Teste Book](img/testes_api/Book/book8.png)
+![Teste Book](img/testes_api/Book/book9.png)
+![Teste Book](img/testes_api/Book/book10.png)
+![Teste Book](img/testes_api/Book/book11.png)
+![Teste Book](img/testes_api/Book/book12.png)
+
+### c) Reviews:
+
+![Teste Review](img/testes_api/Reviews/review1.png)
+![Teste Review](img/testes_api/Reviews/review2.png)
+![Teste Review](img/testes_api/Reviews/review3.png)
+![Teste Review](img/testes_api/Reviews/review4.png)
+![Teste Review](img/testes_api/Reviews/review5.png)
+![Teste Review](img/testes_api/Reviews/review6.png)
+![Teste Review](img/testes_api/Reviews/review7.png)
+![Teste Review](img/testes_api/Reviews/review8.png)
+
+### d) Estante virtual / Bookshelf:
+
+![Teste Bookshelf](img/testes_api/Estante/estante1.png)
+![Teste Bookshelf](img/testes_api/Estante/estante2.png)
+![Teste Bookshelf](img/testes_api/Estante/estante3.png)
+![Teste Bookshelf](img/testes_api/Estante/estante4.png)
+![Teste Bookshelf](img/testes_api/Estante/estante5.png)
+![Teste Bookshelf](img/testes_api/Estante/estante6.png)
+![Teste Bookshelf](img/testes_api/Estante/estante7.png)
+![Teste Bookshelf](img/testes_api/Estante/estante8.png)
+![Teste Bookshelf](img/testes_api/Estante/estante9.png)
+![Teste Bookshelf](img/testes_api/Estante/estante10.png)
+
+### e) Notificações:
+
+![Teste Notificacoes](img/testes_api/notifications/notific1.png)
+![Teste Notificacoes](img/testes_api/notifications/notific2.png)
+![Teste Notificacoes](img/testes_api/notifications/notific3.png)
+![Teste Notificacoes](img/testes_api/notifications/notific4.png)
+![Teste Notificacoes](img/testes_api/notifications/notific5.png)
+![Teste Notificacoes](img/testes_api/notifications/notific6.png)
+![Teste Notificacoes](img/testes_api/notifications/notific7.png)
+![Teste Notificacoes](img/testes_api/notifications/notific8.png)
+
+### f) Solicitações de troca / Exchange requests:
+
+![Teste Trocas](img/testes_api/troca/troca1.png)
+![Teste Trocas](img/testes_api/troca/troca2.png)
+![Teste Trocas](img/testes_api/troca/troca3.png)
+![Teste Trocas](img/testes_api/troca/troca4.png)
+![Teste Trocas](img/testes_api/troca/troca5.png)
+![Teste Trocas](img/testes_api/troca/troca6.png)
+![Teste Trocas](img/testes_api/troca/troca7.png)
+![Teste Trocas](img/testes_api/troca/troca8.png)
+![Teste Trocas](img/testes_api/troca/troca9.png)
+![Teste Trocas](img/testes_api/troca/troca10.png)
+
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+<p align="justify">  BARBOSA, A. F.; LIMA, P. G.. O aumento do preço dos livros e o impacto no acesso à leitura no Brasil. São Paulo: Editora Cultura, 2020.</p>
+
+<p align="justify"> GOMES, M. C.; SILVA, T. P. Plataformas digitais e a transformação do hábito de leitura entre jovens. Rio de Janeiro: Editora Educação, 2021.</p>
+
+<p align="justify"> Retratos da Leitura no Brasil. Instituto Pró Livro. Ministério da Cultura, 2024. Disponível em: https://www.prolivro.org.br/wp-content/uploads/2024/11/Apresentac%CC%A7a%CC%83o_Retratos_da_Leitura_2024_13-11_SITE.pdf. Acesso em: 18 fev. 2025.</p>
+
+<p align="justify"> BEZERRA, Raphael. Mais da metade dos jovens brasileiros tem pouco ou nenhum hábito de leitura e é desafio para educação. Jornal Opção, 24 jul. 2024. Disponível em: Mais da metade dos jovens brasileiros tem pouco ou nenhum hábito de leitura e é desafio para educação. Acesso em: 19 fev. 2025.</p>
+
+<p align="justify"> Relatório Jovens na Ibero-América 2021: 67% dos jovens brasileiros afirmam gostar de ler, mas leem apenas dois livros em média por ano. Instituto Pró Livro, 24 out. 2022. Disponível em: https://www.prolivro.org.br/2022/10/24/relatorio-jovens-na-ibero-america-2021-67-dos-jovens-brasileiros-afirmam-gostar-de-ler-mas-leem-apenas-dois-livros-em-media-por-ano/. Acesso em: 20 fev. 2025.</p>
+
+<p align="justify"> OLIVEIRA, A. F.; MENDES, R. P. A leitura entre os jovens: desafios e soluções para o acesso aos livros. São Paulo: Editora Cultura, 2023.</p>
+
+<p align="justify"> INSTITUTO PRÓ LIVRO. Retratos da Leitura no Brasil 2024. São Paulo: Instituto Pró Livro, 2024.</p>
