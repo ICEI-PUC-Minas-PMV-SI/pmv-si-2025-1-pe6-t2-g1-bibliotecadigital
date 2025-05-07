@@ -88,7 +88,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
       <DialogContent className="sm:max-w-[425px] p-0 overflow-hidden">
         <DialogHeader className="pt-6 px-6">
           <DialogTitle className="text-2xl font-display text-center">
-            {activeTab === 'signin' ? 'Welcome back' : 'Join Shelfmates'}
+            {activeTab === 'signin' ? 'Bem vindo de volta' : 'Junte-se ao SaveBook'}
           </DialogTitle>
         </DialogHeader>
         
@@ -99,8 +99,8 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
           className="mt-1"
         >
           <TabsList className="grid grid-cols-2 mb-6 px-6">
-            <TabsTrigger value="signin">Sign In</TabsTrigger>
-            <TabsTrigger value="signup">Sign Up</TabsTrigger>
+            <TabsTrigger value="signin">Entrar</TabsTrigger>
+            <TabsTrigger value="signup">Inscrever-se</TabsTrigger>
           </TabsList>
           
           <TabsContent value="signin" className="px-6 pb-6 pt-0">
@@ -108,16 +108,16 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
               <div className="grid gap-4">
                 <div className="grid gap-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="your@email.com" />
+                  <Input id="email" type="email" placeholder="seu@email.com" />
                 </div>
                 <div className="grid gap-2">
                   <div className="flex items-center justify-between">
-                    <Label htmlFor="password">Password</Label>
+                    <Label htmlFor="password">Senha</Label>
                     <Button 
                       variant="link" 
                       className="px-0 h-auto text-xs text-muted-foreground"
                     >
-                      Forgot password?
+                      Esqueceu sua senha?
                     </Button>
                   </div>
                   <Input id="password" type="password" />
@@ -127,10 +127,10 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
                   {isLoading ? (
                     <>
                       <LoaderCircle className="mr-2 h-4 w-4 animate-spin" />
-                      Signing in
+                      Entrando
                     </>
                   ) : (
-                    'Sign In'
+                    'Entrar'
                   )}
                 </Button>
               </div>
@@ -142,7 +142,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
               </div>
               <div className="relative flex justify-center text-xs">
                 <span className="bg-background px-2 text-muted-foreground">
-                  Or continue with
+                  Ou continue com
                 </span>
               </div>
             </div>
@@ -200,7 +200,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
                   <form onSubmit={(e) => { e.preventDefault(); handleContinue(); }}>
                     <div className="grid gap-4">
                       <div className="grid gap-2">
-                        <Label htmlFor="name">Full Name</Label>
+                        <Label htmlFor="name">Nome completo</Label>
                         <Input id="name" type="text" required />
                       </div>
                       <div className="grid gap-2">
@@ -208,7 +208,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
                         <Input id="signup-email" type="email" required />
                       </div>
                       <div className="grid gap-2">
-                        <Label htmlFor="signup-password">Password</Label>
+                        <Label htmlFor="signup-password">Senha</Label>
                         <Input id="signup-password" type="password" required />
                       </div>
                       
@@ -222,7 +222,7 @@ export default function AuthModal({ open, onOpenChange }: AuthModalProps) {
                     </div>
                     <div className="relative flex justify-center text-xs">
                       <span className="bg-background px-2 text-muted-foreground">
-                        Or continue with
+                        Ou continue com
                       </span>
                     </div>
                   </div>

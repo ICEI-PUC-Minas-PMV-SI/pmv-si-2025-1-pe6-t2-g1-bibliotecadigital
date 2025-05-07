@@ -109,7 +109,7 @@ export default function Index() {
               <div className="relative flex items-center">
                 <Input 
                   className="pr-12 h-12 rounded-full pl-6 shadow-sm bg-white dark:bg-gray-900" 
-                  placeholder="Search by title, author, or ISBN" 
+                  placeholder="Pesquise por título, autor ou ISBN" 
                 />
                 <Button 
                   size="icon" 
@@ -166,7 +166,7 @@ export default function Index() {
       >
         <div className="container px-4 mx-auto">
           <div className="text-center mb-12">
-            <h2 className="section-heading">How It Works</h2>
+            <h2 className="section-heading">Como funciona</h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
               SaveBook torna fácil se conectar a outros leitores, trocar livros e rastrear sua jornada de leitura.
             </p>
@@ -292,7 +292,7 @@ export default function Index() {
                 <h3 className="font-medium mb-4">Navegação</h3>
                 <ul className="space-y-3">
                   <li><Link to="/" className="text-muted-foreground hover:text-foreground">Home</Link></li>
-                  <li><Link to="/explore" className="text-muted-foreground hover:text-foreground">Explore</Link></li>
+                  <li><Link to="/explore" className="text-muted-foreground hover:text-foreground">Explorar</Link></li>
                   <li><Link to="/bookshelf" className="text-muted-foreground hover:text-foreground">Estante</Link></li>
                 </ul>
               </div>
@@ -317,7 +317,7 @@ export default function Index() {
           </div>
           
           <div className="mt-12 pt-8 border-t text-center text-muted-foreground text-sm">
-            <p>© {new Date().getFullYear()} SaveBook. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} SaveBook. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

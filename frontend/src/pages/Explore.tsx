@@ -277,7 +277,7 @@ export default function Explore() {
             <DialogTrigger asChild>
               <Button variant="outline" className="flex-shrink-0 relative">
                 <SlidersHorizontal className="mr-2 h-4 w-4" />
-                Filters
+                Filtros
                 {getActiveFilterCount() > 0 && (
                   <Badge className="ml-2 h-5 w-5 p-0 flex items-center justify-center">
                     {getActiveFilterCount()}

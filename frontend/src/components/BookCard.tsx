@@ -144,7 +144,7 @@ export default function BookCard({
                     className="text-xs"
                     onClick={() => onExchangeClick?.(book)}
                   >
-                    Request
+                    Solicitar
                   </Button>
                 )}
               </div>
@@ -200,10 +200,10 @@ export default function BookCard({
               }}
             >
               {book.exchangeStatus === 'available' 
-                ? 'Available for exchange' 
+                ? 'Disponível para troca' 
                 : book.exchangeStatus === 'donation'
-                ? 'Free to good home'
-                : 'Exchange pending'}
+                ? 'Livre para um bom lar'
+                : 'Troca pendente'}
             </Badge>
           )}
           {renderRating()}
@@ -217,7 +217,7 @@ export default function BookCard({
                 className="text-muted-foreground hover:text-foreground p-0"
               >
                 <Heart className="h-4 w-4 mr-1" />
-                <span className="text-xs">Save</span>
+                <span className="text-xs">Salvar</span>
               </Button>
               {book.exchangeStatus && book.exchangeStatus !== 'not-available' && (
                 <Button 
@@ -226,7 +226,7 @@ export default function BookCard({
                   className="text-xs"
                   onClick={() => onExchangeClick?.(book)}
                 >
-                  Request
+                  Solicitar
                 </Button>
               )}
             </div>
