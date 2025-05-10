@@ -59,7 +59,7 @@ Especificamente, os objetivos incluem:
 
 |ID    | Descrição do Requisito | Prioridade | Responsável |
 |------|------------------------|------------|-------------|
-|RF-001|O sistema deve permitir o cadastro de usuários, incluindo nome, foto e preferências literárias. (Opções de login via Google e Facebook)|M|Amanda Furtado|
+|RF-001|O sistema deve permitir o cadastro de usuários, incluindo nome, foto e preferências literárias.|M|Amanda Furtado|
 |RF-002|O sistema deve permitir que os usuários cadastrem livros disponíveis para troca ou doação, incluindo informações como título, autor, edição, estado de conservação e foto do livro|M|Amanda Furtado|
 |RF-003|O sistema deve permitir que os usuários manifestem interesse em livros cadastrados para troca, enviando uma notificação ao dono do livro|M|Diovana Tavares|
 |RF-004|O sistema deve oferecer uma "estante virtual" para os usuários registrarem livros lidos, em leitura e desejados|M|Diovana Tavares|
@@ -126,7 +126,7 @@ Especificamente, os objetivos incluem:
 
 ## Cadastro e Gerenciamento de Usuários
 - Permite que os usuários criem uma conta com nome, foto de perfil e preferências literárias;
-- Suporte para login via e-mail/senha e redes sociais (Google, Facebook, etc.);
+- Suporte para login via e-mail/senha;
 - Edição de perfil, incluindo atualização de preferências, fotos e informações pessoais.
 
 ## Catálogo de Livros para Troca e Doação
@@ -185,8 +185,6 @@ _Imagem 02 - Fluxograma representando a arquitetura de solução_
 <p align="justify"> Para a versão mobile, será aplicado o React Native, que permite criar aplicativos nativos para iOS e Android a partir de um único código-base, garantindo uma experiência consistente em diferentes dispositivos. Para simplificar o desenvolvimento e a configuração inicial, poderá ser utilizado o Expo, que oferece uma série de ferramentas que aceleram o processo de desenvolvimento mobile.</p>
 
 <p align="justify"> No backend, o Node.js com o framework Express será utilizado para construir a API que gerencia a lógica do servidor e a comunicação com o banco de dados. A escolha do Node.js se deve à sua capacidade de usar JavaScript em todo o stack, permitindo que seja utilizada a mesma linguagem para trabalhar no frontend e backend.</p>
-
-<p align="justify"> Para a autenticação de usuários via Google e Facebook, será integrado o Firebase Authentication, que simplifica o processo de login social e garante segurança e confiabilidade.</p>
 
 <p align="justify"> Para armazenar dados, MongoDB mostra-se como a opção inicial, um banco de dados NoSQL que oferece flexibilidade e escalabilidade, essenciais para gerenciar as informações dos usuários, livros e interações dentro da aplicação. O Mongoose é aplicado como uma camada de modelagem de dados, o que facilita a interação com o MongoDB e garante que os dados sejam validados e estruturados corretamente. A escolha do MongoDB se justifica pela necessidade de lidar com dados variados, como perfis de usuário, detalhes de livros e avaliações, de maneira eficiente.</p>
 

@@ -6,7 +6,7 @@ O projeto SAVEBOOK tem como objetivo principal criar uma comunidade online para 
 
 A API do SAVEBOOK tem como principal objetivo permitir que usuários se cadastrem, publiquem livros para doação ou troca, interajam entre si, avaliem livros e organizem suas leituras. A API será usada por clientes externos, como o frontend web em React e o aplicativo mobile em React Native. Entre os principais recursos oferecidos estão:
 
--Cadastro e login de usuários (incluindo autenticação via Google e Facebook);
+-Cadastro e login de usuários;
 
 -Registro e visualização de livros disponíveis;
 
@@ -809,7 +809,7 @@ Sucesso (200 OK)
 
 As principais estratégias de segurança adotadas incluem:
 
-- Autenticação e Autorização: Utilização do Firebase Authentication para autenticação segura via e-mail/senha e redes sociais (Google e Facebook), com tokens de acesso gerenciados por JWT (JSON Web Token) para autorizar as requisições dos usuários.
+- Autenticação e Autorização: Utilização do Firebase Authentication para autenticação segura via e-mail/senha, com tokens de acesso gerenciados por JWT (JSON Web Token) para autorizar as requisições dos usuários.
 - Proteção de Dados Sensíveis: Senhas dos usuários são armazenadas com criptografia (utilizando hashing seguro como bcrypt), evitando exposição de credenciais mesmo em caso de vazamento de dados.
 - Validação de Requisições: Implementação de middleware para validação de entradas nos endpoints da API, prevenindo ataques como SQL Injection, NoSQL Injection e XSS.
 - Controle de Acesso: Diferenciação de permissões para usuários comuns e administradores, garantindo que apenas usuários autorizados possam executar determinadas ações, como moderação ou exclusão de conteúdo.

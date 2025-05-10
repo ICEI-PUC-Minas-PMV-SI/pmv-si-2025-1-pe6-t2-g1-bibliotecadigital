@@ -10,7 +10,7 @@ import { UsersModule } from '../users/users.module';
   imports: [
     UsersModule,
     JwtModule.register({
-      secret: 'secret-key-for-demo-purposes', // In a real app, use env variables
+      secret: 'secret-key-for-demo-purposes',
       signOptions: { expiresIn: '1d' },
     }),
   ],

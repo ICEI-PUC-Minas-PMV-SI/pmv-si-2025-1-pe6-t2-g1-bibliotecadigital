@@ -5,7 +5,6 @@ import { AuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
 
-// Simplified controller for student project
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
@@ -30,28 +29,5 @@ export class AuthController {
   async logout(@Res() response: Response) {
     response.clearCookie('jwt');
     return response.json({ message: 'Logged out successfully' });
-  }
-
-  // Social login endpoints - simplified
-  @Get('google/callback')
-  googleAuthCallback(@Req() req, @Res() response: Response) {
-    try {
-      const result = this.authService.socialLogin(req.user);
-      response.cookie('jwt', result.access_token, { httpOnly: true });
-      return response.json({ user: result.user });
-    } catch (error) {
-      return response.status(401).json({ message: error.message });
-    }
-  }
-
-  @Get('facebook/callback')
-  facebookAuthCallback(@Req() req, @Res() response: Response) {
-    try {
-      const result = this.authService.socialLogin(req.user);
-      response.cookie('jwt', result.access_token, { httpOnly: true });
-      return response.json({ user: result.user });
-    } catch (error) {
-      return response.status(401).json({ message: error.message });
-    }
   }
 }
