@@ -11,3 +11,4 @@ O arquivo CITATION.cff está disponível na pasta raiz do repositório e deve se
 
 O professor Laerte do curso de Engenharia de Software da PUC Minas disponibilizou orientações sobre o preenchimento do arquivo CITATION.cff, disponível em [https://youtu.be/zsTyPoBCCvM](https://youtu.be/zsTyPoBCCvM).
 
+

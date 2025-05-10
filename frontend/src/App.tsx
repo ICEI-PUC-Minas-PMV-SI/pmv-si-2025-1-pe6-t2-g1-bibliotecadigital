@@ -16,17 +16,13 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { user, loading } = useAuth();
-  
- 
+
   if (loading) return null;
-  
-  
+
   if (!user) return <Navigate to="/" replace />;
-  
- 
+
   return <>{children}</>;
 };
 
@@ -40,7 +36,11 @@ const AuthModal = () => {
     setIsOpen(false);
   };
 
-  const handleRegister = async (name: string, email: string, password: string) => {
+  const handleRegister = async (
+    name: string,
+    email: string,
+    password: string
+  ) => {
     await register(name, email, password);
     setIsOpen(false);
   };
@@ -49,14 +49,14 @@ const AuthModal = () => {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="sm:max-w-[425px]">
         {isLogin ? (
-          <Login 
-            onLogin={handleLogin} 
-            onRegisterClick={() => setIsLogin(false)} 
+          <Login
+            onLogin={handleLogin}
+            onRegisterClick={() => setIsLogin(false)}
           />
         ) : (
-          <Register 
-            onRegister={handleRegister} 
-            onLoginClick={() => setIsLogin(true)} 
+          <Register
+            onRegister={handleRegister}
+            onLoginClick={() => setIsLogin(true)}
           />
         )}
       </DialogContent>
@@ -74,13 +74,13 @@ const App = () => (
           <AuthModal />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route 
-              path="/bookshelf" 
+            <Route
+              path="/bookshelf"
               element={
                 <ProtectedRoute>
                   <Bookshelf />
                 </ProtectedRoute>
-              } 
+              }
             />
             <Route path="/explore" element={<Explore />} />
             <Route path="/books/:id" element={<BookDetail />} />

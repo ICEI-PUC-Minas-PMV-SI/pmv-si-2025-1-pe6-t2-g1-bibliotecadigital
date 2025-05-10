@@ -5,6 +5,9 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  app.enableCors();
+
   app.useGlobalPipes(new ValidationPipe());
   app.setGlobalPrefix('api');
 
@@ -20,4 +23,5 @@ async function bootstrap() {
   await app.listen(3000);
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
+
 bootstrap();

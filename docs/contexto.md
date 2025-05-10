@@ -218,3 +218,4 @@ _Imagem 02 - Fluxograma representando a arquitetura de solução_
 
 <p align="justify"> INSTITUTO PRÓ LIVRO. Retratos da Leitura no Brasil 2024. São Paulo: Instituto Pró Livro, 2024.</p>
 
+

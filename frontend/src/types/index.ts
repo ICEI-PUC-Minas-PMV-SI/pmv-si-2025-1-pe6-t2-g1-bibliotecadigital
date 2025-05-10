@@ -1,57 +1,56 @@
-
 // Literary preferences for users
-export type LiteraryPreference = 
-  | 'fiction' 
-  | 'non-fiction' 
-  | 'sci-fi' 
-  | 'fantasy' 
-  | 'romance' 
-  | 'mystery' 
-  | 'thriller' 
-  | 'biography' 
-  | 'history' 
-  | 'self-help'
-  | 'poetry';
+export type LiteraryPreference =
+  | "fiction"
+  | "science-fiction"
+  | "non-fiction"
+  | "sci-fi"
+  | "fantasy"
+  | "romance"
+  | "mystery"
+  | "thriller"
+  | "biography"
+  | "history"
+  | "horror"
+  | "self-help"
+  | "young-adult"
+  | "poetry";
 
 // Reading status for bookshelf items
-export type ReadStatus = 
-  | 'reading'
-  | 'want-to-read'
-  | 'read';
+export type ReadStatus = "reading" | "want-to-read" | "read";
 
 // Book condition types
-export type BookCondition = 
-  | 'new'
-  | 'like-new'
-  | 'very-good'
-  | 'good'
-  | 'acceptable'
-  | 'poor';
+export type BookCondition =
+  | "new"
+  | "like-new"
+  | "very-good"
+  | "good"
+  | "acceptable"
+  | "poor";
 
 // Exchange status for books
-export type ExchangeStatus = 
-  | 'available'
-  | 'pending'
-  | 'exchanged'
-  | 'not-available'
-  | 'donation';
+export type ExchangeStatus =
+  | "available"
+  | "pending"
+  | "exchanged"
+  | "not-available"
+  | "donation";
 
 // Request status for exchange requests
-export type RequestStatus = 
-  | 'pending'
-  | 'accepted'
-  | 'rejected'
-  | 'completed'
-  | 'cancelled';
+export type RequestStatus =
+  | "pending"
+  | "accepted"
+  | "rejected"
+  | "completed"
+  | "cancelled";
 
 // Notification types
-export type NotificationType = 
-  | 'exchange-request'
-  | 'request-accepted'
-  | 'request-rejected'
-  | 'exchange-completed'
-  | 'new-message'
-  | 'system';
+export type NotificationType =
+  | "exchange-request"
+  | "request-accepted"
+  | "request-rejected"
+  | "exchange-completed"
+  | "new-message"
+  | "system";
 
 // Book interface
 export interface Book {
