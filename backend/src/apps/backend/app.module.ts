@@ -8,6 +8,7 @@ import { ReviewsModule } from './modules/reviews/review.module';
 import { BookshelfItemModule } from './modules/bookshelf/bookshelf.module';
 import { NotificationModule } from './modules/notifications/notification.module';
 import { ExchangeRequestModule } from './modules/exchange-request/exchange.request.module';
+import { AuthModule } from './modules/authentication/auth.module';
 
 
 @Module({
@@ -36,6 +37,7 @@ import { ExchangeRequestModule } from './modules/exchange-request/exchange.reque
     BookshelfItemModule,
     NotificationModule,
     ExchangeRequestModule,
+    AuthModule
   ],
 })
 export class AppModule {}
