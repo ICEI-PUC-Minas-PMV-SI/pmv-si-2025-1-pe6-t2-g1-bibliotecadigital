@@ -50,14 +50,26 @@ Etapas de implantação:
   - Verificações incluíram autenticação, CRUD de usuários e livros, testes de responsividade e envio de notificações.
 
 ## Testes
+1. Casos de Teste para Requisitos Funcionais e Não Funcionais
+Foram criados testes funcionais com base nos requisitos RF-001 a RF-008, cobrindo cadastro de usuário, avaliação, ranking e acesso à biblioteca. As evidências foram registradas em vídeo. Aspectos não funcionais como usabilidade e navegação fluida foram demonstrados no vídeo geral da aplicação.
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+2. Testes Unitários
+Não foram utilizados frameworks como Jest, mas testes manuais foram realizados em funções isoladas da interface, como validação de formulários e filtros. Esses testes simulam o comportamento esperado de testes unitários.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+3. Testes de Integração
+As funcionalidades foram testadas em conjunto: o front-end interagiu com a API corretamente em cadastros, avaliações e buscas. Os testes foram feitos manualmente e comprovados por vídeo.
+
+4. Testes de Carga
+Foram feitas simulações manuais em diferentes abas e navegadores para avaliar estabilidade e tempo de resposta da aplicação. Não foram usados scripts automatizados.
+
+5. Ferramentas Utilizadas
+Streamable – Gravação e compartilhamento das evidências de teste.
+
+Navegadores (Chrome/Edge) – Execução dos testes manuais.
+
+DevTools – Verificação de respostas da API.
+
+Deseja que eu coloque esse texto em um Word final?
 
 # Referências
 
