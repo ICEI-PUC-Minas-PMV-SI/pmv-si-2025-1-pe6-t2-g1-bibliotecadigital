@@ -51,18 +51,23 @@ Etapas de implantação:
 
 ## Testes
 1. Casos de Teste para Requisitos Funcionais e Não Funcionais
+
 Foram criados testes funcionais com base nos requisitos RF-001 a RF-008, cobrindo cadastro de usuário, avaliação, ranking e acesso à biblioteca. As evidências foram registradas em vídeo. Aspectos não funcionais como usabilidade e navegação fluida foram demonstrados no vídeo geral da aplicação.
 
 2. Testes Unitários
+
 Não foram utilizados frameworks como Jest, mas testes manuais foram realizados em funções isoladas da interface, como validação de formulários e filtros. Esses testes simulam o comportamento esperado de testes unitários.
 
 3. Testes de Integração
+
 As funcionalidades foram testadas em conjunto: o front-end interagiu com a API corretamente em cadastros, avaliações e buscas. Os testes foram feitos manualmente e comprovados por vídeo.
 
 4. Testes de Carga
+
 Foram feitas simulações manuais em diferentes abas e navegadores para avaliar estabilidade e tempo de resposta da aplicação. Não foram usados scripts automatizados.
 
 5. Ferramentas Utilizadas
+
 Streamable – Gravação e compartilhamento das evidências de teste.
 
 Navegadores (Chrome/Edge) – Execução dos testes manuais.
