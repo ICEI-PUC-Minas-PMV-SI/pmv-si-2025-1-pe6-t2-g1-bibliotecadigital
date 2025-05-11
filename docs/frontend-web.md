@@ -34,7 +34,7 @@ Etapas de implantação:
 - Requisitos de Software:
   - Node.js ≥ 18
   - Git
-  - Conta no Vercel (ou Heroku, para o backend)
+  - Conta no Vercel
 
 - Configuração do Ambiente:
   - Criação de repositórios no GitHub com as versões do frontend (React) e backend (Node.js + Express).
