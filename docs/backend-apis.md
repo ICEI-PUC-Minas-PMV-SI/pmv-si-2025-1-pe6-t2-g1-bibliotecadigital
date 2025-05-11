@@ -825,8 +825,8 @@ Etapas de implantação:
 - Requisitos de Software:
   - Node.js ≥ 18
   - Git
-  - Conta no Vercel (ou Heroku, para o backend)
-  - MongoDB Atlas (ou instância Mongo hospedada na Azure)
+  - Conta no Vercel
+  - MongoDB Atlas
 
 - Configuração do Ambiente:
   - Criação de repositórios no GitHub com as versões do frontend (React) e backend (Node.js + Express).
@@ -835,8 +835,7 @@ Etapas de implantação:
   - Configuração de `build` e `start` scripts no `package.json`.
 
 - Deploy:
-  - O frontend foi implantado diretamente via Vercel, com cada push para a branch principal acionando automaticamente um novo deploy.
-  - O backend, responsável pelos endpoints da API, pode ser hospedado no Heroku ou outra plataforma que suporte Node.js com variáveis de ambiente configuráveis.
+  - O backend, responsável pelos endpoints da API, foi implantado diretamente via Vercel.
   - Banco de dados MongoDB hospedado na Azure, conectado ao backend por URI segura.
 
 - Testes de Produção:

@@ -27,13 +27,27 @@
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+A aplicação foi implantada utilizando a plataforma Vercel, aproveitando sua integração contínua com o GitHub e suporte para aplicações baseadas em React, garantindo uma experiência fluida de deploy.
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+Etapas de implantação:
+
+- Requisitos de Software:
+  - Node.js ≥ 18
+  - Git
+  - Conta no Vercel (ou Heroku, para o backend)
+
+- Configuração do Ambiente:
+  - Criação de repositórios no GitHub com as versões do frontend (React) e backend (Node.js + Express).
+  - Definição de variáveis de ambiente no painel do Vercel, como URIs do banco de dados, chaves de autenticação e tokens secretos.
+  - Instalação de dependências com `npm install` em ambos os projetos.
+  - Configuração de `build` e `start` scripts no `package.json`.
+
+- Deploy:
+  - O frontend foi implantado diretamente via Vercel, com cada push para a branch principal acionando automaticamente um novo deploy.
+
+- Testes de Produção:
+  - Após o deploy, foram realizados testes para verificar o funcionamento dos endpoints e da interface web.
+  - Verificações incluíram autenticação, CRUD de usuários e livros, testes de responsividade e envio de notificações.
 
 ## Testes
 
