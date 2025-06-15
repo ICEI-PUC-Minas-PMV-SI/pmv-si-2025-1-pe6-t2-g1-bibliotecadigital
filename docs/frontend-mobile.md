@@ -1,13 +1,14 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+<p align="justify">O projeto SaveBook é uma aplicação web e mobile que visa promover o hábito de leitura entre jovens de 15 a 35 anos, criando uma comunidade online para troca, doação e recomendação de livros. Seu objetivo é facilitar o acesso à literatura, superar barreiras econômicas e incentivar a interação social entre leitores, oferecendo funcionalidades como estante virtual, avaliações de livros, feed social e biblioteca de domínio público, tudo dentro de um ambiente intuitivo e dinâmico.</p>
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+Os Wireframes das páginas principais da interface foram desenvolvidos no software Photoshop. 
+
+
 
 ### Design Visual
 
@@ -43,11 +44,6 @@ As principais considerações de segurança no front-end da aplicação SaveBook
 Essas práticas garantem que a experiência do usuário no front-end seja segura, protegendo dados e prevenindo interações maliciosas com a aplicação.
 
 ## Implantação
-Claro. Aqui está a versão limpa e direta, sem emojis, pronta para inclusão em repositório GitHub ou documentação técnica:
-
----
-
-## 7.5 Implantação
 
 A aplicação SAVEBOOK foi implantada seguindo práticas modernas de desenvolvimento distribuído, utilizando ferramentas gratuitas, escaláveis e integradas ao fluxo de desenvolvimento.
 
@@ -135,5 +131,16 @@ A estratégia de testes foi baseada nos requisitos funcionais definidos na Etapa
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+<p align="justify">  BARBOSA, A. F.; LIMA, P. G.. O aumento do preço dos livros e o impacto no acesso à leitura no Brasil. São Paulo: Editora Cultura, 2020.</p>
 
+<p align="justify"> GOMES, M. C.; SILVA, T. P. Plataformas digitais e a transformação do hábito de leitura entre jovens. Rio de Janeiro: Editora Educação, 2021.</p>
+
+<p align="justify"> Retratos da Leitura no Brasil. Instituto Pró Livro. Ministério da Cultura, 2024. Disponível em: https://www.prolivro.org.br/wp-content/uploads/2024/11/Apresentac%CC%A7a%CC%83o_Retratos_da_Leitura_2024_13-11_SITE.pdf. Acesso em: 18 fev. 2025.</p>
+
+<p align="justify"> BEZERRA, Raphael. Mais da metade dos jovens brasileiros tem pouco ou nenhum hábito de leitura e é desafio para educação. Jornal Opção, 24 jul. 2024. Disponível em: Mais da metade dos jovens brasileiros tem pouco ou nenhum hábito de leitura e é desafio para educação. Acesso em: 19 fev. 2025.</p>
+
+<p align="justify"> Relatório Jovens na Ibero-América 2021: 67% dos jovens brasileiros afirmam gostar de ler, mas leem apenas dois livros em média por ano. Instituto Pró Livro, 24 out. 2022. Disponível em: https://www.prolivro.org.br/2022/10/24/relatorio-jovens-na-ibero-america-2021-67-dos-jovens-brasileiros-afirmam-gostar-de-ler-mas-leem-apenas-dois-livros-em-media-por-ano/. Acesso em: 20 fev. 2025.</p>
+
+<p align="justify"> OLIVEIRA, A. F.; MENDES, R. P. A leitura entre os jovens: desafios e soluções para o acesso aos livros. São Paulo: Editora Cultura, 2023.</p>
+
+<p align="justify"> INSTITUTO PRÓ LIVRO. Retratos da Leitura no Brasil 2024. São Paulo: Instituto Pró Livro, 2024.</p>
