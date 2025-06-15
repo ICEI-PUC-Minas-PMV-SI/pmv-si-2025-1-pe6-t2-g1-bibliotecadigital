@@ -26,14 +26,64 @@
 [Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
 
 ## Implantação
+Claro. Aqui está a versão limpa e direta, sem emojis, pronta para inclusão em repositório GitHub ou documentação técnica:
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+---
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+## 7.5 Implantação
+
+A aplicação SAVEBOOK foi implantada seguindo práticas modernas de desenvolvimento distribuído, utilizando ferramentas gratuitas, escaláveis e integradas ao fluxo de desenvolvimento.
+
+### Requisitos de Hardware e Software
+
+* Node.js versão 18 ou superior
+* Git
+* Conta no Vercel
+* Conta no MongoDB Atlas
+* Firebase Authentication e Firebase Cloud Messaging
+* CPU: mínimo 2 vCPUs
+* Memória RAM: 4 GB
+* Armazenamento: SSD de 40 GB
+* Conectividade: no mínimo 100 Mbps
+
+### Plataforma de Hospedagem
+
+* Frontend: Vercel (React)
+* Backend: Vercel (Node.js + Express, serverless)
+* Banco de dados: MongoDB Atlas (NoSQL, em nuvem)
+* Autenticação: Firebase Authentication
+* Notificações: Firebase Cloud Messaging
+
+### Configuração do Ambiente
+
+* Repositórios frontend e backend criados no GitHub
+* Instalação das dependências com `npm install`
+* Scripts definidos no `package.json`:
+
+  * "start": "node index.js"
+  * "build": "vite build"
+* Variáveis de ambiente configuradas no painel do Vercel:
+
+  * MONGO\_URI
+  * JWT\_SECRET
+  * FIREBASE\_API\_KEY
+* Integração contínua com GitHub, ativando deploy automático a cada commit na branch main
+
+### Processo de Deploy
+
+O deploy foi realizado via integração entre GitHub e Vercel. A cada push na branch main, o Vercel executa a build automaticamente e publica a nova versão. O banco de dados é acessado via URI segura do MongoDB Atlas. Firebase é utilizado para autenticação de usuários e envio de notificações.
+
+### Validação Pós-Deploy
+
+* Testes de autenticação com Firebase (login via Google e Facebook)
+* CRUD completo de usuários e livros validado com Swagger
+* Verificação de responsividade da interface web em dispositivos desktop e mobile
+* Testes de envio e recebimento de notificações via Firebase Cloud Messaging
+* Testes de leitura e escrita no MongoDB Atlas
+
+A aplicação apresentou funcionamento estável e desempenho satisfatório em ambiente de produção.
+
+
 
 ## Testes
 
