@@ -104,42 +104,30 @@ A aplicação apresentou funcionamento estável e desempenho satisfatório em am
 
 ## Testes
 
-A estratégia de testes foi baseada nos requisitos funcionais definidos na Etapa 2 e aplicou diferentes métodos para garantir o correto funcionamento da aplicação, tanto em nível de código quanto em sua integração com o ambiente de produção.
+# Estratégia de Testes – SAVEBOOK
 
+A estratégia de testes foi baseada nos requisitos funcionais definidos na Etapa 2. Foram aplicadas abordagens complementares para validar o correto funcionamento da aplicação, tanto em nível de código quanto em sua integração com o ambiente de produção.
 
-RF-002
-Cadastro de livros com título, autor, edição, estado de conservação e imagem
-https://streamable.com/4h4y82
-RF-003
-Manifestar interesse em livros cadastrados para troca
-https://streamable.com/plyylz
-RF-004
-Estante virtual: registrar livros lidos, em leitura e desejados
-https://streamable.com/u8rro4
-RF-005
-Avaliação de livros com notas e comentários
-https://streamable.com/3p072e
-RF-009
-Publicação de resenhas no feed, com curtidas e comentários
-https://streamable.com/87swu5
+## Casos de Teste por Requisito Funcional
 
-Resultados Obtidos
-Todos os requisitos do tipo "Must Have" foram testados com sucesso
+| Requisito | Descrição                                                                 | Evidência em Vídeo                              |
+|-----------|---------------------------------------------------------------------------|--------------------------------------------------|
+| RF-001    | Cadastro e login de usuários com e-mail e redes sociais                  | [https://streamable.com/1gzoju](https://streamable.com/1gzoju) |
+| RF-002    | Cadastro de livros com título, autor, edição, estado de conservação e imagem | [https://streamable.com/4h4y82](https://streamable.com/4h4y82) |
+| RF-003    | Manifestar interesse em livros cadastrados para troca                    | [https://streamable.com/plyylz](https://streamable.com/plyylz) |
+| RF-004    | Estante virtual: registrar livros lidos, em leitura e desejados          | [https://streamable.com/u8rro4](https://streamable.com/u8rro4) |
+| RF-005    | Avaliação de livros com notas e comentários                              | [https://streamable.com/3p072e](https://streamable.com/3p072e) |
+| RF-009    | Publicação de resenhas no feed, com curtidas e comentários               | [https://streamable.com/87swu5](https://streamable.com/87swu5) |
 
+## Resultados Obtidos
 
-Tempo médio de resposta dos endpoints: inferior a 1.5 segundos
+- Todos os requisitos classificados como "Must Have" foram testados com sucesso.
+- Tempo médio de resposta dos endpoints: inferior a 1.5 segundos.
+- Nenhum erro crítico foi identificado nos testes de integração.
+- Funcionalidades de autenticação e notificações operaram conforme o esperado.
+- Todos os testes foram documentados em vídeo para facilitar a validação externa.
+- A aplicação SAVEBOOK demonstrou estabilidade e confiabilidade nos fluxos principais.
 
-
-Nenhum erro crítico identificado nos testes de integração
-
-
-Autenticação e notificações funcionaram conforme esperado
-
-
-Os testes foram documentados em vídeo para facilitar a validação pelo professor
-
-
-A aplicação SAVEBOOK demonstrou estabilidade e confiabilidade nos fluxos essenciais.
 
 
 
