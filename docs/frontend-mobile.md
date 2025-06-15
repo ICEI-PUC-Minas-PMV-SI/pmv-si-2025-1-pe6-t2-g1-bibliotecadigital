@@ -8,6 +8,21 @@
 
 Os Wireframes das páginas principais da interface foram desenvolvidos no software Photoshop. 
 
+Homepage: <br>
+![WF-Homepage](img/etapa04/HOME PAGE.png)
+![WF-Homepage2](img/etapa04/HOME PAGE 2.png)
+
+Explorar livros:<br>
+![WF-Explorar](img/etapa04/explorar.png)
+
+Estante:<br>
+![WF-Estante](img/etapa04/ESTANTE.png)
+
+Detalhes de livros:<br>
+![WF-Detalhes](img/etapa04/DETALHES LIVRO.png)
+
+Solicitar Livro:<br>
+![WF-SolicitarLivro](img/etapa04/SOLICITAR LIVRO.png)
 
 
 ### Design Visual
