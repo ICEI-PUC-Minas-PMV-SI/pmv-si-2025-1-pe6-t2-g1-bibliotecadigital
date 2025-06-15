@@ -3,27 +3,27 @@
 <p align="justify">O projeto SaveBook é uma aplicação web e mobile que visa promover o hábito de leitura entre jovens de 15 a 35 anos, criando uma comunidade online para troca, doação e recomendação de livros. Seu objetivo é facilitar o acesso à literatura, superar barreiras econômicas e incentivar a interação social entre leitores, oferecendo funcionalidades como estante virtual, avaliações de livros, feed social e biblioteca de domínio público, tudo dentro de um ambiente intuitivo e dinâmico.</p>
 
 ## Projeto da Interface
-
 ### Wireframes
 
 Os Wireframes das páginas principais da interface foram desenvolvidos no software Photoshop. 
 
 Homepage: <br>
-![WF-Homepage](img/etapa04/HOME PAGE.png)
-![WF-Homepage2](img/etapa04/HOME PAGE 2.png)
+<img src="img/etapa04/HOME PAGE.png" alt="WF-Homepage" width="50%">
+
+Homepage²: <br>
+<img src="img/etapa04/HOME PAGE 2.png" alt="WF-Homepage²" width="50%">
 
 Explorar livros:<br>
-![WF-Explorar](img/etapa04/explorar.png)
+<img src="img/etapa04/explorar.png" alt="WF-Explorar" width="50%">
 
 Estante:<br>
-![WF-Estante](img/etapa04/ESTANTE.png)
+<img src="img/etapa04/ESTANTE.png" alt="WF-Estante" width="50%">
 
 Detalhes de livros:<br>
-![WF-Detalhes](img/etapa04/DETALHES LIVRO.png)
+<img src="img/etapa04/DETALHES LIVRO.png" alt="WF-Detalhes" width="50%">
 
 Solicitar Livro:<br>
-![WF-SolicitarLivro](img/etapa04/SOLICITAR LIVRO.png)
-
+<img src="img/etapa04/SOLICITAR LIVRO.png" alt="WF-SolicitarLivro" width="50%">
 
 ### Design Visual
 
