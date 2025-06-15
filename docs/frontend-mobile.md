@@ -104,13 +104,46 @@ A aplicação apresentou funcionamento estável e desempenho satisfatório em am
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+A estratégia de testes foi baseada nos requisitos funcionais definidos na Etapa 2 e aplicou diferentes métodos para garantir o correto funcionamento da aplicação, tanto em nível de código quanto em sua integração com o ambiente de produção.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+
+RF-002
+Cadastro de livros com título, autor, edição, estado de conservação e imagem
+https://streamable.com/4h4y82
+RF-003
+Manifestar interesse em livros cadastrados para troca
+https://streamable.com/plyylz
+RF-004
+Estante virtual: registrar livros lidos, em leitura e desejados
+https://streamable.com/u8rro4
+RF-005
+Avaliação de livros com notas e comentários
+https://streamable.com/3p072e
+RF-009
+Publicação de resenhas no feed, com curtidas e comentários
+https://streamable.com/87swu5
+
+Resultados Obtidos
+Todos os requisitos do tipo "Must Have" foram testados com sucesso
+
+
+Tempo médio de resposta dos endpoints: inferior a 1.5 segundos
+
+
+Nenhum erro crítico identificado nos testes de integração
+
+
+Autenticação e notificações funcionaram conforme esperado
+
+
+Os testes foram documentados em vídeo para facilitar a validação pelo professor
+
+
+A aplicação SAVEBOOK demonstrou estabilidade e confiabilidade nos fluxos essenciais.
+
+
+
+
 
 # Referências
 
