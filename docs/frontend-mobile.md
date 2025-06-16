@@ -89,7 +89,7 @@ Detalhes livro: <br>
 Detalhes livro²: <br>
 <img src="img/etapa04/printdetalheslivro2.png" alt="printdetalheslivro2" width="50%">
 
-Solicitarlivro: <br>
+Solicitar livro: <br>
 
 Fontes:
 * Título: Playfair Display
@@ -106,7 +106,7 @@ Cores:
 * Enviar solicitação: fundo #DF6C20, texto branco
 * Cards: #FFFFFF
 
-Explorar: <br>
+Solicitar livro: <br>
 <img src="img/etapa04/printsolicitarlivro.png" alt="printsolicitarlivro" width="50%">
 
 
