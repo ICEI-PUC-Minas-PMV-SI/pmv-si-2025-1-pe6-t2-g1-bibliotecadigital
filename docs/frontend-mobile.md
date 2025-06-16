@@ -32,16 +32,16 @@ A interface do SaveBook apresenta um design moderno e minimalista, priorizando a
 Homepage: <br>
 
 Fontes:
- Título destacado: Playfair Display
- Subtítulos/textos/depoimentos: Inter
+* Título destacado: Playfair Display
+* Subtítulos/textos/depoimentos: Inter
 
 Cores:
- Fundo: #F9F9F9
- Título: #2A303D
- Destaque: #DF6C20
- Textos: #78808C
- Logo: #E65100
- Depoimentos: #F1F1F1
+* Fundo: #F9F9F9
+* Título: #2A303D
+* Destaque: #DF6C20
+* Textos: #78808C
+* Logo: #E65100
+* Depoimentos: #F1F1F1
 
  Homepage: <br>
 <img src="img/etapa04/printhomepage.png" alt="printHomepage" width="50%">
@@ -52,19 +52,19 @@ Homepage²: <br>
 Explorar: <br>
 
 Fontes:
- Título: Playfair Display
- Subtítulo: Inter
- Títulos livros: Literata
- Autores: Inter
+* Título: Playfair Display
+* Subtítulo: Inter
+* Títulos livros: Literata
+* Autores: Inter
 
 Cores:
- Fundo: #FFFFFF
- Título: #2A303D
- Subtítulo: #78808C
- Filtros: #DEE2E8
- Botões: #DF6C20
- Estrelas: #FFD700
- Cards: #FFFFFF
+* Fundo: #FFFFFF
+* Título: #2A303D
+* Subtítulo: #78808C
+* Filtros: #DEE2E8
+* Botões: #DF6C20
+* Estrelas: #FFD700
+* Cards: #FFFFFF
 
 Explorar: <br>
 <img src="img/etapa04/printexplorar.png" alt="printexplorar" width="50%">
@@ -73,21 +73,42 @@ Detalhes Livro: <br>
 
 
 Fontes:
- Título: Playfair Display
- Textos: Inter
+* Título: Playfair Display
+* Textos: Inter
 
 Cores:
- Fundo: #FFFFFF
- Título: #2A303D
- Textos: #78808C
- Botão: #DF6C20
- Cancelar: #DEE2E8
+* Fundo: #FFFFFF
+* Título: #2A303D
+* Textos: #78808C
+* Botão: #DF6C20
+* Cancelar: #DEE2E8
 
 Detalhes livro: <br>
 <img src="img/etapa04/printdetalheslivro.png" alt="printdetalheslivro" width="50%">
 
 Detalhes livro²: <br>
 <img src="img/etapa04/printdetalheslivro2.png" alt="printdetalheslivro2" width="50%">
+
+Solicitarlivro: <br>
+
+Fontes:
+* Título: Playfair Display
+* Subtítulo: Inter
+* Títulos livros: Literata
+* Autores: Inter
+
+Cores:
+* Fundo: #FFFFFF
+* Título: #2A303D
+* Subtítulo: #78808C
+* Filtros/Tags ("Disponível para troca"): #DEE2E8 com texto em verde #2ECC71
+* Cancelar: cor do texto #2A303D
+* Enviar solicitação: fundo #DF6C20, texto branco
+* Cards: #FFFFFF
+
+Explorar: <br>
+<img src="img/etapa04/printsolicitarlivro.png" alt="printsolicitarlivro" width="50%">
+
 
 ## Fluxo de Dados
 
