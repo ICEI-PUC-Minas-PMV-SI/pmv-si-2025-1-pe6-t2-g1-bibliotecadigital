@@ -1,9 +1,9 @@
 # Apresentação da Solução
 
-SITE:
+[⬇️Acessar video do SITE]
 
-[⬇️ Baixar vídeo do site (ZIP)](../docs/video/SITE.rar)
+https://streamable.com/5w621l
 
-APP:
+[⬇️Acessar video do APP]
 
-[⬇️ Baixar vídeo do app (ZIP)](../docs/video/app.rar)
+https://streamable.com/0kudje
