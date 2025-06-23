@@ -2,22 +2,8 @@
 
 SITE:
 
-<video width="640" height="360" controls>
-  <source src="video/site.mp4" type="video/mp4">
-</video>
+[⬇️ Baixar vídeo do site (ZIP)](../docs/video/SITE.rar)
 
 APP:
 
-<video width="640" height="360" controls>
-  <source src="video/app.mp4" type="video/mp4">
-</video>
-
-
-# Apresentação da Solução
-
-**SITE:**  
-[▶️ Assistir vídeo do site](video/site.mp4)
-
-**APP:**  
-[▶️ Assistir vídeo do app](video/app.mp4)
-
+[⬇️ Baixar vídeo do app (ZIP)](../docs/video/app.rar)
